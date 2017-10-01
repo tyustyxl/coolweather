@@ -5,9 +5,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * 创建表格
+ * @author yuxiaolong
+ *
+ */
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
-
-
 
 	public static final String CREATE_PROVINCE = "create table Province("
 			+ "id integer primary key autoincrement, "

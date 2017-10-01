@@ -23,12 +23,12 @@ public class CoolWeatherDB {
 		db = dbHelper.getWritableDatabase();
 	}
 	
+	//单例设计模式
 	public synchronized static CoolWeatherDB getInstance(Context context) {
 		if (coolWeatherDB == null) {
 			coolWeatherDB = new CoolWeatherDB(context);
 		}
-		return coolWeatherDB;
-		
+		return coolWeatherDB;	
 	}
 	
 	public void saveProvince(Province province) {
